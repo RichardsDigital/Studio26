@@ -1,6 +1,6 @@
 import React from 'react';
 import logoFull from '../images/logoFull.png'
-import Karousel from '../components/Carousel';
+import Carousel from '../components/Carousel';
 
 function Home() {
     return (
@@ -9,7 +9,7 @@ function Home() {
                 <img src={logoFull}/>
             </div>
             <div className="innerContent">
-                    <Karousel />
+                    <Carousel />
             </div>
         </section>
     )

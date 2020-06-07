@@ -79,12 +79,8 @@ nav ul li {
 .homeBanner img {
     height: 120px;
 }
-.carouselWrapper {
-    height: 20%;
-    width: 20%;
-}
-.carouselWrapper img {
-    object-fit: contain;
+.carouselImage {
+    opacity: 80%;
 }
 
 
