@@ -33,7 +33,7 @@ button {
 .smallImageBox {
     position: relative;
     display: grid;
-    border: 4px solid white;
+    /* border: 4px solid white; */
     border-radius: 4px;
 }
 .smallImageBox img {
@@ -43,6 +43,9 @@ button {
 .divide {
     display: grid;
     grid-template-columns: 1fr 1fr;
+}
+.carouselImage {
+    opacity: 80%;
 }
 
 /* Navigation */
@@ -137,9 +140,6 @@ nav ul li {
 .homeBanner img {
     height: 120px;
 }
-.carouselImage {
-    opacity: 80%;
-}
 .homeInfo {
     width: 100%;
     height: 100%;
@@ -176,6 +176,71 @@ nav ul li {
     justify-self: end;
     align-self: center;
     margin-left: 4%;
+}
+.aboutInfo .smallImageBox, .soundcloudWidget {
+    width: 60%;
+    justify-self: center;
+    align-self: center;
+}
+.itemBlock {
+    margin-bottom: 24px;
+}
+.splitLine {
+    height: 1px;
+    opacity: 40%;
+    width: 100%;
+    background-color: rgb(110, 110, 110);
+    margin-bottom: 4%;
+}
+
+/* Services Page */
+
+.cardWrapper {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 300px;
+}
+.priceCard {
+    height: 100%;
+    width: 26%;
+    border-radius: 16px;
+    background-color: rgb(134, 134, 134);
+    display: grid;
+    grid-template-rows: 15% 1fr 15%;
+}
+.priceCard {
+    justify-self: center;
+    align-self: center;
+}
+.cardTitle, .cardInfo {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    border-bottom: 1px solid black;
+}
+.priceCard .cardTitle, .priceCard .cardInfo, .priceCard .cardPrice {
+    display: grid;
+    justify-self: center;
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+}
+.priceCard h4, .priceCard p {
+    margin: 0;
+    text-align: center;
+}
+
+/* Contact Page */
+
+#googleMap {
+    height: 300px;
+    width: 100%;
+}
+
+.contactInfo button {
+    margin: 0 0 24px 0;
 }
 
 

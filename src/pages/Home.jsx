@@ -2,6 +2,8 @@ import React from 'react';
 import logoFull from '../images/logoFull.png'
 import Carousel from '../components/Carousel';
 
+import mixer from '../images/carousel-Images/mixer.png';
+import guitar from '../images/carousel-Images/guitar.png';
 import studio from '../images/carousel-Images/studio.png';
 
 function Home() {
@@ -11,7 +13,7 @@ function Home() {
                 <img src={logoFull}/>
             </div>
             <div className="innerContent">
-                    <Carousel />
+                    <Carousel imageA={mixer} imageB={guitar} imageC={studio} />
             </div>
             <div className="homeInfo">
                 <div className="divide">
