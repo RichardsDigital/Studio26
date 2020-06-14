@@ -1,9 +1,9 @@
 import React from 'react';
 import Carousel from '../components/Carousel';
 import SC from 'soundcloud';
-import event01 from '../images/carousel-Images/event01.png';
-import event02 from '../images/carousel-Images/event02.png';
-import event03 from '../images/carousel-Images/event03.png';
+import event01 from '../images/carousel-Images/event01.jpg';
+import event02 from '../images/carousel-Images/event02.jpg';
+import event03 from '../images/carousel-Images/event03.jpg';
 
 class About extends React.Component {
 

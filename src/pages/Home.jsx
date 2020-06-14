@@ -2,9 +2,9 @@ import React from 'react';
 import logoFull from '../images/logoFull.png'
 import Carousel from '../components/Carousel';
 
-import mixer from '../images/carousel-Images/mixer.png';
-import guitar from '../images/carousel-Images/guitar.png';
-import studio from '../images/carousel-Images/studio.png';
+import mixer from '../images/carousel-Images/mixer.jpg';
+import guitar from '../images/carousel-Images/guitar.jpg';
+import studio from '../images/carousel-Images/studio.jpg';
 
 function Home() {
     return (
