@@ -45,7 +45,7 @@ button {
     grid-template-columns: 1fr 1fr;
 }
 .carouselImage {
-    opacity: 80%;
+    opacity: 0.8;
 }
 
 /* Navigation */
@@ -103,7 +103,7 @@ nav ul li {
 .footer p {
     position: absolute;
     color: white;
-    opacity: 60%;
+    opacity: 0.6;
     bottom: 0;
     margin: 30px 4%;
     letter-spacing: 0.6px;
@@ -187,7 +187,7 @@ nav ul li {
 }
 .splitLine {
     height: 1px;
-    opacity: 40%;
+    opacity: 0.4;
     width: 100%;
     background-color: rgb(110, 110, 110);
     margin-bottom: 4%;
