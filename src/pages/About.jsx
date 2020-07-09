@@ -10,7 +10,7 @@ class About extends React.Component {
     constructor(props) {
         super(props);
 
-        this.state = { music: null };
+        this.state = { music01: null, music02: null };
     }
 
     componentDidMount () {
@@ -21,7 +21,15 @@ class About extends React.Component {
           var track_url = 'https://soundcloud.com/user-915016109-716538663/sets/recording-portfolio';
 
           SC.oEmbed(track_url, { auto_play: true, maxheight: 170, maxwidth: 700}).then((oEmbed) => {
-            this.setState({music: oEmbed.html}, () => {console.log(this.state.music)});
+            this.setState({music01: oEmbed.html}, () => {console.log(this.state.music01)});
+          });
+          SC.initialize({
+            client_id: 'YOUR_CLIENT_ID'
+          });
+          var track_url = 'https://soundcloud.com/user-915016109-716538663/magpie-holly-rees';
+
+          SC.oEmbed(track_url, { auto_play: true, maxheight: 170, maxwidth: 700}).then((oEmbed) => {
+            this.setState({music02: oEmbed.html}, () => {console.log(this.state.music02)});
           });
     }
 
@@ -78,8 +86,14 @@ class About extends React.Component {
                     </p>
 
                     <div className="itemBlock">
-                        <div className="soundcloudWidget" dangerouslySetInnerHTML={{__html: this.state.music}}></div>
+                        <div className="soundcloudWidget" dangerouslySetInnerHTML={{__html: this.state.music01}}></div>
                     </div>
+
+                    <div className="itemBlock">
+                        <div className="soundcloudWidget" dangerouslySetInnerHTML={{__html: this.state.music02}}></div>
+                    </div>
+
+                    <button className="soundcloudButton">View All</button>
 
                     <div className="splitLine"></div>
                 </div>

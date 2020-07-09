@@ -21,6 +21,10 @@ p {
 button {
     padding: 5px 60px;
 }
+.soundcloudButton{
+    margin-bottom: 30px;
+    width: 700px;
+}
 .infoBox {
     padding: 4%;
 }
